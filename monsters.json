@@ -1,0 +1,269 @@
+{
+ "slime": {
+  "name": "Gosma",
+  "color": "#5ad36b",
+  "size": [
+   46,
+   34
+  ],
+  "hp": 40,
+  "atk": 8,
+  "speed": 70,
+  "xp": 8,
+  "gold": 4,
+  "move": "walk",
+  "stop": 60,
+  "attacks": [
+   {
+    "id": "bite",
+    "type": "melee",
+    "range": 55,
+    "min": 0,
+    "max": 85,
+    "windup": 0.5,
+    "recover": 0.6,
+    "dmg": 1.0,
+    "cd": 1.0
+   }
+  ]
+ },
+ "bat": {
+  "name": "Morcego",
+  "color": "#8a6ad3",
+  "size": [
+   34,
+   26
+  ],
+  "hp": 28,
+  "atk": 8,
+  "speed": 120,
+  "xp": 9,
+  "gold": 4,
+  "flying": true,
+  "move": "hover",
+  "attacks": [
+   {
+    "id": "dive",
+    "type": "dive",
+    "min": 80,
+    "max": 600,
+    "windup": 0.6,
+    "recover": 0.9,
+    "dmg": 1.2,
+    "speed": 520,
+    "dur": 0.45,
+    "cd": 2.2
+   }
+  ]
+ },
+ "goblin_archer": {
+  "name": "Goblin Arqueiro",
+  "color": "#c9a23a",
+  "size": [
+   34,
+   50
+  ],
+  "hp": 35,
+  "atk": 9,
+  "speed": 90,
+  "xp": 10,
+  "gold": 5,
+  "move": "kite",
+  "kite_min": 300,
+  "kite_max": 450,
+  "attacks": [
+   {
+    "id": "shot",
+    "type": "projectile",
+    "min": 200,
+    "max": 750,
+    "windup": 0.6,
+    "recover": 0.7,
+    "dmg": 1.0,
+    "speed": 480,
+    "cd": 1.6
+   }
+  ]
+ },
+ "boar": {
+  "name": "Javali",
+  "color": "#b5651d",
+  "size": [
+   60,
+   40
+  ],
+  "hp": 70,
+  "atk": 12,
+  "speed": 90,
+  "xp": 14,
+  "gold": 6,
+  "move": "walk",
+  "stop": 50,
+  "attacks": [
+   {
+    "id": "bite",
+    "type": "melee",
+    "range": 40,
+    "min": 0,
+    "max": 85,
+    "windup": 0.45,
+    "recover": 0.6,
+    "dmg": 1.0,
+    "cd": 1.2,
+    "w": 2
+   },
+   {
+    "id": "charge",
+    "type": "charge",
+    "min": 220,
+    "max": 650,
+    "windup": 0.7,
+    "recover": 1.0,
+    "dmg": 1.5,
+    "speed": 560,
+    "dur": 0.6,
+    "cd": 3.5,
+    "w": 3
+   }
+  ]
+ },
+ "ogre": {
+  "name": "Ogro (Elite)",
+  "color": "#7a8a3a",
+  "size": [
+   76,
+   100
+  ],
+  "hp": 220,
+  "atk": 16,
+  "speed": 60,
+  "xp": 40,
+  "gold": 20,
+  "armor": true,
+  "move": "walk",
+  "stop": 80,
+  "attacks": [
+   {
+    "id": "club",
+    "type": "melee",
+    "range": 80,
+    "min": 0,
+    "max": 110,
+    "windup": 0.6,
+    "recover": 0.8,
+    "dmg": 1.2,
+    "cd": 1.5,
+    "w": 3
+   },
+   {
+    "id": "slam",
+    "type": "slam",
+    "radius": 150,
+    "min": 0,
+    "max": 170,
+    "windup": 0.9,
+    "recover": 1.0,
+    "dmg": 1.8,
+    "cd": 5,
+    "w": 2
+   }
+  ]
+ },
+ "dragon": {
+  "name": "Dragão",
+  "color": "#d6453a",
+  "size": [
+   150,
+   120
+  ],
+  "hp": 650,
+  "atk": 20,
+  "speed": 90,
+  "xp": 150,
+  "gold": 120,
+  "boss": true,
+  "armor": true,
+  "move": "walk",
+  "stop": 150,
+  "phases": [
+   0.7,
+   0.4
+  ],
+  "phase_speed": [
+   1.0,
+   1.1,
+   1.4
+  ],
+  "attacks": [
+   {
+    "id": "claw",
+    "type": "melee",
+    "range": 130,
+    "min": 0,
+    "max": 190,
+    "windup": 0.7,
+    "recover": 0.8,
+    "dmg": 1.2,
+    "cd": 1.5,
+    "w": 3,
+    "phase": 1
+   },
+   {
+    "id": "fire",
+    "type": "projectile",
+    "min": 200,
+    "max": 1000,
+    "windup": 0.8,
+    "recover": 0.9,
+    "dmg": 1.0,
+    "speed": 460,
+    "count": 3,
+    "spread": 0.18,
+    "cd": 4,
+    "w": 2,
+    "phase": 2
+   },
+   {
+    "id": "charge",
+    "type": "charge",
+    "min": 250,
+    "max": 900,
+    "windup": 1.0,
+    "recover": 1.3,
+    "dmg": 1.8,
+    "speed": 700,
+    "dur": 0.8,
+    "cd": 6,
+    "w": 2,
+    "phase": 2
+   },
+   {
+    "id": "slam",
+    "type": "slam",
+    "radius": 240,
+    "min": 0,
+    "max": 300,
+    "windup": 1.0,
+    "recover": 1.0,
+    "dmg": 2.0,
+    "cd": 5,
+    "w": 2,
+    "phase": 3
+   },
+   {
+    "id": "summon",
+    "type": "summon",
+    "monster": "bat",
+    "count": 2,
+    "min": 0,
+    "max": 2000,
+    "windup": 1.0,
+    "recover": 1.0,
+    "dmg": 0,
+    "cd": 18,
+    "w": 1,
+    "phase": 3
+   }
+  ]
+ }
+}

@@ -1,0 +1,113 @@
+{
+ "name": "Floresta Sombria (Mini)",
+ "grade_multiplier": {
+  "S": 1.5,
+  "A": 1.25,
+  "B": 1.0,
+  "C": 0.8
+ },
+ "drops": {
+  "base": 2,
+  "boss_bonus": 0.8
+ },
+ "rooms": [
+  {
+   "name": "Sala 1 - Orla da Floresta",
+   "bg": "#1c2b24",
+   "plat": "#8a6a3b",
+   "ground": "#3d5a3a",
+   "platforms": [
+    [
+     350,
+     500,
+     260
+    ],
+    [
+     900,
+     440,
+     260
+    ],
+    [
+     1500,
+     500,
+     260
+    ]
+   ],
+   "waves": [
+    [
+     "slime",
+     "slime",
+     "slime"
+    ],
+    [
+     "slime",
+     "goblin_archer",
+     "bat"
+    ]
+   ]
+  },
+  {
+   "name": "Sala 2 - Clareira",
+   "bg": "#22263a",
+   "plat": "#7a7f99",
+   "ground": "#444a63",
+   "platforms": [
+    [
+     300,
+     480,
+     240
+    ],
+    [
+     800,
+     400,
+     240
+    ],
+    [
+     1300,
+     480,
+     240
+    ],
+    [
+     1800,
+     420,
+     240
+    ]
+   ],
+   "waves": [
+    [
+     "boar",
+     "goblin_archer",
+     "slime"
+    ],
+    [
+     "bat",
+     "boar"
+    ]
+   ]
+  },
+  {
+   "name": "Covil do Dragão",
+   "bg": "#331616",
+   "plat": "#8f5a3a",
+   "ground": "#4a2a24",
+   "platforms": [
+    [
+     250,
+     480,
+     220
+    ],
+    [
+     640,
+     400,
+     220
+    ],
+    [
+     1030,
+     480,
+     220
+    ]
+   ],
+   "boss": "dragon"
+  }
+ ]
+}

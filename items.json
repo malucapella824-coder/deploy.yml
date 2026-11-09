@@ -1,0 +1,18 @@
+{
+  "stat_names": {"atk": "ATQ", "def": "DEF", "hp": "VIDA", "crit": "CRIT%", "regen": "ENERGIA/s"},
+  "power_weights": {"atk": 2.0, "def": 2.0, "hp": 0.2, "crit": 1.5, "regen": 1.0},
+  "sub_stats": {"atk": [2, 4], "def": [1, 3], "hp": [10, 25], "crit": [1, 3], "regen": [1, 2]},
+  "slots": {
+    "weapon": {"label": "Arma", "bases": ["Espada", "Arco", "Cajado"], "main": "atk", "main_range": [5, 9]},
+    "armor": {"label": "Armadura", "bases": ["Peitoral", "Couraça", "Manto"], "main": "def", "main_range": [3, 6]},
+    "accessory": {"label": "Acessório", "bases": ["Anel", "Colar", "Amuleto"], "main": "crit", "main_range": [2, 4]}
+  },
+  "rarities": [
+    {"id": "common", "label": "Comum", "color": "#ffffff", "weight": 55, "mult": 1.0, "subs": 0},
+    {"id": "uncommon", "label": "Incomum", "color": "#4cd964", "weight": 28, "mult": 1.2, "subs": 1},
+    {"id": "rare", "label": "Raro", "color": "#3a8dff", "weight": 12, "mult": 1.5, "subs": 2},
+    {"id": "epic", "label": "Épico", "color": "#b05cff", "weight": 4, "mult": 1.9, "subs": 3},
+    {"id": "legendary", "label": "Lendário", "color": "#ff9d2e", "weight": 0.9, "mult": 2.5, "subs": 4},
+    {"id": "mythic", "label": "Mítico", "color": "#ff3b3b", "weight": 0.1, "mult": 3.2, "subs": 4}
+  ]
+}
